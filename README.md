@@ -1,1 +1,2 @@
 # argocd-test
+![](./argo.png)
