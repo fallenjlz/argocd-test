@@ -80,3 +80,6 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+secret:
+  mysqlpw: "Y2FuY2Vs"
