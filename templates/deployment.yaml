@@ -37,16 +37,6 @@ spec:
             - name: http
               containerPort: 8000
               protocol: TCP
-          livenessProbe:
-            tcpSocket:
-              port: 8000
-              initialDelaySeconds: 15
-              periodSeconds: 20
-          readinessProbe:
-            tcpSocket:
-              port: 8000
-              initialDelaySeconds: 15
-              periodSeconds: 20
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
